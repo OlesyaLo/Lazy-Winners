@@ -18,7 +18,7 @@
     />
     
     <script type="module" crossorigin src="/Lazy-Winners/assets/index-dfbe58e3.js"></script>
-    <link rel="stylesheet" href="/Lazy-Winners/assets/index-3c18698e.css">
+    <link rel="stylesheet" href="/Lazy-Winners/assets/index-cf354cfc.css">
   </head>
   <body>
     <!-- Header -->
@@ -829,7 +829,6 @@
         <button class="buynow-chocolate-btn" type="button">200 g</button>
       </div>
     </li>
-    <li></li>
     <li>
       <div class="buynow-chocolate">
         <picture>
@@ -878,25 +877,31 @@
   <form class="buynow-form" action="">
     <label class="buynow-label" for="personal_info"
       ><span class="byunow-label-name">Personal information</span>
-      <input
-        class="buynow-input name-input"
-        type="text"
-        pattern=""
-        placeholder="Name"
-      />
-      <input
-        class="buynow-input"
-        type="text"
-        pattern=""
-        placeholder="Surname"
-      />
+      <div class="buynow-label-personal">
+        <input
+          class="buynow-input name-input"
+          type="text"
+          id="personal_info"
+          placeholder="Name"
+          pattern="[a-z]{1,15}"
+        />
+        <input
+          class="buynow-input"
+          type="text"
+          pattern="[a-z]{1,15}"
+          name="personal_info"
+          id="personal_info"
+          placeholder="Surname"
+        />
+      </div>
     </label>
     <label class="buynow-label" for="email"
       ><span class="byunow-label-name">Email</span>
       <input
         class="buynow-input"
         type="email"
-        pattern=""
+        name="email"
+        pattern="(?=.*\d)(?=.*[a-z]).{3,}"
         placeholder="Enter your email"
       />
     </label>
@@ -905,6 +910,8 @@
       <input
         class="buynow-input icon-number"
         type="tel"
+        name="phone_ number"
+        pattern="[0-9]{3}"
         placeholder="Phone number"
       />
       <div class="input-separator">
@@ -919,6 +926,7 @@
       <input
         class="buynow-input"
         type="text"
+        name="card_number"
         pattern="3-12"
         placeholder="Enter card"
       />
@@ -926,7 +934,7 @@
         <use href="../img/icons.svg#mastercard"></use>
       </svg>
     </label>
-    <label class="buynow-label" for=""
+    <label class="buynow-label" for="modal_comment"
       ><span class="byunow-label-name">Comment</span>
       <textarea
         class="buynow-textarea"
