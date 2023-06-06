@@ -142,14 +142,14 @@
     background-color var(--duration-and-timing-function);
 }
 
-.reviews-button:hover,
-.reviews-button:focus {
+.reviews-section .reviews-button:hover,
+.reviews-section .reviews-button:focus {
   color: var(--white-color);
   background-color: var(--orange-color);
 }
 
 @media only screen and (min-width: 768px) {
-  .reviews-button {
+  .reviews-section .reviews-button {
     margin-top: 50px;
     padding: 14px 40px;
     width: 222px;
@@ -219,7 +219,14 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+  border-radius: 50%;
   background-color: transparent;
+}
+
+.reviews-modal-btn:hover,
+.reviews-modal-btn:focus {
+  color: #d44528;
+  background-color: #fcf1e0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -234,7 +241,7 @@
   width: 12px;
   height: 12px;
   position: absolute;
-  fill: var(--black-firs-color);
+  fill: currentColor;
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
